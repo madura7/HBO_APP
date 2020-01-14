@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4cbb96f6ec860f96ab3351a9a1612d5a" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-ZE-vjc">
-                                <rect key="frame" x="32" y="104" width="350" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4cbb96f6ec860f96ab3351a9a1612d5a" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-ZE-vjc">
+                                <rect key="frame" x="50" y="98" width="314" height="115"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="ASv-3F-quE">
                                 <rect key="frame" x="32" y="176" width="350" height="91"/>
@@ -119,9 +118,31 @@ and should contain special characters and numbers</string>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Dl-ZE-vjc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="0yK-vz-Bl0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Dl-ZE-vjc" secondAttribute="trailing" constant="30" id="DRj-fA-K9s"/>
+                            <constraint firstItem="2Dl-ZE-vjc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="FP4-wf-Cqp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Dl-ZE-vjc" secondAttribute="trailing" constant="30" id="ITJ-Xa-O5Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Dl-ZE-vjc" secondAttribute="trailing" constant="30" id="LCB-pU-JVc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Dl-ZE-vjc" secondAttribute="trailing" constant="30" id="LUs-79-tUF"/>
+                            <constraint firstItem="2Dl-ZE-vjc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Qrs-iY-DTw"/>
+                            <constraint firstItem="2Dl-ZE-vjc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="TXD-Qy-tNE"/>
+                            <constraint firstItem="2Dl-ZE-vjc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="VwP-C0-DIO"/>
+                            <constraint firstItem="2Dl-ZE-vjc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="dK5-UB-zIQ"/>
+                            <constraint firstItem="2Dl-ZE-vjc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="gh4-hx-eSc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Dl-ZE-vjc" secondAttribute="trailing" constant="30" id="vHr-ik-6Ah"/>
+                            <constraint firstItem="2Dl-ZE-vjc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xcE-Hh-2zU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="REGISTER FOR HBO NOW" id="KkN-Hj-kDQ"/>
+                    <connections>
+                        <outlet property="txtConfirmPassword" destination="GVq-Nb-W3f" id="GO5-QF-N4k"/>
+                        <outlet property="txtEmailAddress" destination="bzF-kq-qup" id="oBS-LA-Z5L"/>
+                        <outlet property="txtFName" destination="y4g-fl-teO" id="oZ7-pf-yIx"/>
+                        <outlet property="txtLName" destination="7Kl-j2-GDH" id="lsx-oi-9LO"/>
+                        <outlet property="txtPassword" destination="IeA-Po-zx0" id="4Pi-4m-TcB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,6 +160,29 @@ and should contain special characters and numbers</string>
                                 <rect key="frame" x="26" y="80" width="363" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y32-OY-7R8">
+                                <rect key="frame" x="26" y="231" width="363" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5t-pl-MDw">
+                                <rect key="frame" x="26" y="288" width="363" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbV-Q8-VkF">
+                                <rect key="frame" x="26" y="359" width="363" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.21462171120000001" green="0.57333147750000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bga-J6-2eU"/>
