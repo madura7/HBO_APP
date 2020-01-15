@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		195D484923CCC486004128DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D484823CCC486004128DD /* AppDelegate.swift */; };
-		195D484B23CCC486004128DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D484A23CCC486004128DD /* ViewController.swift */; };
 		195D484E23CCC486004128DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195D484C23CCC486004128DD /* Main.storyboard */; };
 		195D485023CCC488004128DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195D484F23CCC488004128DD /* Assets.xcassets */; };
 		195D485323CCC488004128DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195D485123CCC488004128DD /* LaunchScreen.storyboard */; };
+		195D485C23CF7BD0004128DD /* UIRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D485B23CF7BD0004128DD /* UIRegisterViewController.swift */; };
+		195D485F23CF7CB3004128DD /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D485E23CF7CB3004128DD /* UITextFieldExtension.swift */; };
+		195D486123CF8305004128DD /* UISignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D486023CF8305004128DD /* UISignInViewController.swift */; };
+		195D486423CF8622004128DD /* btnCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D486323CF8622004128DD /* btnCustom.swift */; };
+		195D486623CF8656004128DD /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D486523CF8656004128DD /* CheckBoxButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		195D484523CCC486004128DD /* HBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195D484823CCC486004128DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		195D484A23CCC486004128DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		195D484D23CCC486004128DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		195D484F23CCC488004128DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		195D485223CCC488004128DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		195D485423CCC488004128DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195D485B23CF7BD0004128DD /* UIRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRegisterViewController.swift; sourceTree = "<group>"; };
+		195D485E23CF7CB3004128DD /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		195D486023CF8305004128DD /* UISignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISignInViewController.swift; sourceTree = "<group>"; };
+		195D486323CF8622004128DD /* btnCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btnCustom.swift; sourceTree = "<group>"; };
+		195D486523CF8656004128DD /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		195D484723CCC486004128DD /* HBO */ = {
 			isa = PBXGroup;
 			children = (
+				195D486223CF85F2004128DD /* UICustomStyles */,
+				195D485D23CF7C89004128DD /* UIExtensions */,
+				195D485A23CF7BA9004128DD /* UIControllers */,
 				195D484823CCC486004128DD /* AppDelegate.swift */,
-				195D484A23CCC486004128DD /* ViewController.swift */,
 				195D484C23CCC486004128DD /* Main.storyboard */,
 				195D484F23CCC488004128DD /* Assets.xcassets */,
 				195D485123CCC488004128DD /* LaunchScreen.storyboard */,
 				195D485423CCC488004128DD /* Info.plist */,
 			);
 			path = HBO;
+			sourceTree = "<group>";
+		};
+		195D485A23CF7BA9004128DD /* UIControllers */ = {
+			isa = PBXGroup;
+			children = (
+				195D485B23CF7BD0004128DD /* UIRegisterViewController.swift */,
+				195D486023CF8305004128DD /* UISignInViewController.swift */,
+			);
+			path = UIControllers;
+			sourceTree = "<group>";
+		};
+		195D485D23CF7C89004128DD /* UIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				195D485E23CF7CB3004128DD /* UITextFieldExtension.swift */,
+			);
+			path = UIExtensions;
+			sourceTree = "<group>";
+		};
+		195D486223CF85F2004128DD /* UICustomStyles */ = {
+			isa = PBXGroup;
+			children = (
+				195D486323CF8622004128DD /* btnCustom.swift */,
+				195D486523CF8656004128DD /* CheckBoxButton.swift */,
+			);
+			path = UICustomStyles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				195D484B23CCC486004128DD /* ViewController.swift in Sources */,
+				195D485F23CF7CB3004128DD /* UITextFieldExtension.swift in Sources */,
+				195D486423CF8622004128DD /* btnCustom.swift in Sources */,
+				195D485C23CF7BD0004128DD /* UIRegisterViewController.swift in Sources */,
+				195D486123CF8305004128DD /* UISignInViewController.swift in Sources */,
+				195D486623CF8656004128DD /* CheckBoxButton.swift in Sources */,
 				195D484923CCC486004128DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

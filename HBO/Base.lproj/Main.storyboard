@@ -13,13 +13,13 @@
         <!--Register-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Register" id="BYZ-38-t0r" customClass="ViewController" customModule="HBO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register" id="BYZ-38-t0r" customClass="UIRegisterViewController" customModule="HBO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4cbb96f6ec860f96ab3351a9a1612d5a" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-ZE-vjc">
-                                <rect key="frame" x="50" y="98" width="314" height="115"/>
+                                <rect key="frame" x="30" y="98" width="354" height="115"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="ASv-3F-quE">
                                 <rect key="frame" x="32" y="176" width="350" height="91"/>
@@ -137,11 +137,11 @@ and should contain special characters and numbers</string>
                     </view>
                     <navigationItem key="navigationItem" title="REGISTER FOR HBO NOW" id="KkN-Hj-kDQ"/>
                     <connections>
-                        <outlet property="txtConfirmPassword" destination="GVq-Nb-W3f" id="GO5-QF-N4k"/>
-                        <outlet property="txtEmailAddress" destination="bzF-kq-qup" id="oBS-LA-Z5L"/>
-                        <outlet property="txtFName" destination="y4g-fl-teO" id="oZ7-pf-yIx"/>
-                        <outlet property="txtLName" destination="7Kl-j2-GDH" id="lsx-oi-9LO"/>
-                        <outlet property="txtPassword" destination="IeA-Po-zx0" id="4Pi-4m-TcB"/>
+                        <outlet property="txtConfirmPassword" destination="GVq-Nb-W3f" id="aHK-5X-87F"/>
+                        <outlet property="txtEmailAddress" destination="bzF-kq-qup" id="Bky-xZ-jJc"/>
+                        <outlet property="txtFName" destination="y4g-fl-teO" id="sWY-Bl-VXw"/>
+                        <outlet property="txtLName" destination="7Kl-j2-GDH" id="Jrq-EN-YGq"/>
+                        <outlet property="txtPassword" destination="IeA-Po-zx0" id="9NT-Z8-JIj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -151,15 +151,11 @@ and should contain special characters and numbers</string>
         <!--Sign In-->
         <scene sceneID="8jB-gf-IIa">
             <objects>
-                <viewController id="9IJ-C4-kFu" sceneMemberID="viewController">
+                <viewController id="9IJ-C4-kFu" customClass="UISignInViewController" customModule="HBO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dE4-dd-9ga">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4cbb96f6ec860f96ab3351a9a1612d5a" translatesAutoresizingMaskIntoConstraints="NO" id="1JA-zJ-rai">
-                                <rect key="frame" x="26" y="80" width="363" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y32-OY-7R8">
                                 <rect key="frame" x="26" y="231" width="363" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -183,11 +179,19 @@ and should contain special characters and numbers</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4cbb96f6ec860f96ab3351a9a1612d5a" translatesAutoresizingMaskIntoConstraints="NO" id="aPk-xI-fBp">
+                                <rect key="frame" x="35" y="88" width="354" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bga-J6-2eU"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="pyJ-pl-NGN"/>
+                    <connections>
+                        <outlet property="txtEmailAddress" destination="y32-OY-7R8" id="05C-EO-nLA"/>
+                        <outlet property="txtPassword" destination="r5t-pl-MDw" id="o2l-xm-PMA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7MC-ZG-Xqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
