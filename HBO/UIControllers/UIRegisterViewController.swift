@@ -45,6 +45,21 @@ class UIRegisterViewController: UIViewController {
         txtPassword.placeholderColor(color: UIColor.white)
         txtConfirmPassword.placeholderColor(color: UIColor.white)
     }
+    
+    func fieldValidate(){
+        showAlert()
+    }
+    
+    func showAlert(){
+        
+        
+
+    }
+    
+    @IBAction func btnRegisterAction(_ sender: Any) {
+        fieldValidate()
+    }
+    
 }
 
 

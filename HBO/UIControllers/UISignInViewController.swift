@@ -27,5 +27,14 @@ class UISignInViewController: UIViewController {
         txtPassword.placeholderColor(color: UIColor.white)
     }
 
+    @IBAction func btnSignInAction(_ sender: Any) {
+
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        let HomeViewController = storyBoard.instantiateViewController(withIdentifier: "home") as! UIHomeViewController
+        self.present(HomeViewController, animated: true, completion: nil)
+
+    }
+    
+    
     
 }
