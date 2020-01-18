@@ -8,6 +8,9 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
+import FirebaseCore
+
 
 class UIRegisterViewController: UIViewController {
     
@@ -57,8 +60,28 @@ class UIRegisterViewController: UIViewController {
     }
     
     @IBAction func btnRegisterAction(_ sender: Any) {
-        fieldValidate()
+        
+        let validator = ValidateFields()
+        
+        let alert = AlertDialog()
+        Auth.auth().createUser(withEmail: txtEmailAddress.text!, password: txtPassword.text!) {
+            authResult, error in
+            if ((error == nil)) {
+                print("Success")
+                alert.showAlert(title: "Signed up successfully", message: "You have been successfully Signed up", buttonText: "Dashboard")
+            } else {
+
+                print(self.txtPassword.text)
+                alert.showAlert(title: "Error", message: "Error occured", buttonText: "Dashboard")
+                print(self.txtPassword.text)
+                print(error)
+            }
+            // ...
+        }
+        
+        
     }
+
     
 }
 

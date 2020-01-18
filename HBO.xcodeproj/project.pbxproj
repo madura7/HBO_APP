@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		194F81A223D0CCFC004C4D9A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194F81A123D0CCFC004C4D9A /* Home.storyboard */; };
-		194F81A423D0CE4F004C4D9A /* UIHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F81A323D0CE4F004C4D9A /* UIHomeViewController.swift */; };
 		195D484923CCC486004128DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D484823CCC486004128DD /* AppDelegate.swift */; };
 		195D484E23CCC486004128DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195D484C23CCC486004128DD /* Main.storyboard */; };
 		195D485023CCC488004128DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195D484F23CCC488004128DD /* Assets.xcassets */; };
@@ -19,12 +17,15 @@
 		195D486423CF8622004128DD /* btnCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D486323CF8622004128DD /* btnCustom.swift */; };
 		195D486623CF8656004128DD /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D486523CF8656004128DD /* CheckBoxButton.swift */; };
 		195D486823D0970D004128DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 195D486723D0970D004128DD /* GoogleService-Info.plist */; };
+		1984C36423D2B14A00B90B61 /* AlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984C36323D2B14A00B90B61 /* AlertDialog.swift */; };
+		1984C36623D2B8C000B90B61 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984C36523D2B8BF00B90B61 /* Validator.swift */; };
+		1984C36A23D2CBE900B90B61 /* UIHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984C36923D2CBE900B90B61 /* UIHomeViewController.swift */; };
+		1984C36C23D2CDBB00B90B61 /* UIDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984C36B23D2CDBB00B90B61 /* UIDashboardViewController.swift */; };
+		1984C36E23D2D0AD00B90B61 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1984C36D23D2D0AD00B90B61 /* Home.storyboard */; };
 		835002BDDF69127F13B26D8D /* Pods_HBO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653D271F845F6F2F7BDF2AAF /* Pods_HBO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		194F81A123D0CCFC004C4D9A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		194F81A323D0CE4F004C4D9A /* UIHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHomeViewController.swift; sourceTree = "<group>"; };
 		195D484523CCC486004128DD /* HBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195D484823CCC486004128DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		195D484D23CCC486004128DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +38,11 @@
 		195D486323CF8622004128DD /* btnCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btnCustom.swift; sourceTree = "<group>"; };
 		195D486523CF8656004128DD /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
 		195D486723D0970D004128DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1984C36323D2B14A00B90B61 /* AlertDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDialog.swift; sourceTree = "<group>"; };
+		1984C36523D2B8BF00B90B61 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		1984C36923D2CBE900B90B61 /* UIHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHomeViewController.swift; sourceTree = "<group>"; };
+		1984C36B23D2CDBB00B90B61 /* UIDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDashboardViewController.swift; sourceTree = "<group>"; };
+		1984C36D23D2D0AD00B90B61 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		653D271F845F6F2F7BDF2AAF /* Pods_HBO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDEA7CCAE3B4D37A8586F0F /* Pods-HBO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBO.release.xcconfig"; path = "Target Support Files/Pods-HBO/Pods-HBO.release.xcconfig"; sourceTree = "<group>"; };
 		98195FCA61B29DAEB6077170 /* Pods-HBO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBO.debug.xcconfig"; path = "Target Support Files/Pods-HBO/Pods-HBO.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,7 +63,7 @@
 		194F81A023D0CCD9004C4D9A /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				194F81A123D0CCFC004C4D9A /* Home.storyboard */,
+				1984C36D23D2D0AD00B90B61 /* Home.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -84,6 +90,7 @@
 		195D484723CCC486004128DD /* HBO */ = {
 			isa = PBXGroup;
 			children = (
+				1984C36223D2B12800B90B61 /* Helpers */,
 				194F81A023D0CCD9004C4D9A /* StoryBoards */,
 				195D486223CF85F2004128DD /* UICustomStyles */,
 				195D485D23CF7C89004128DD /* UIExtensions */,
@@ -102,7 +109,8 @@
 			children = (
 				195D485B23CF7BD0004128DD /* UIRegisterViewController.swift */,
 				195D486023CF8305004128DD /* UISignInViewController.swift */,
-				194F81A323D0CE4F004C4D9A /* UIHomeViewController.swift */,
+				1984C36923D2CBE900B90B61 /* UIHomeViewController.swift */,
+				1984C36B23D2CDBB00B90B61 /* UIDashboardViewController.swift */,
 			);
 			path = UIControllers;
 			sourceTree = "<group>";
@@ -122,6 +130,15 @@
 				195D486523CF8656004128DD /* CheckBoxButton.swift */,
 			);
 			path = UICustomStyles;
+			sourceTree = "<group>";
+		};
+		1984C36223D2B12800B90B61 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1984C36323D2B14A00B90B61 /* AlertDialog.swift */,
+				1984C36523D2B8BF00B90B61 /* Validator.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		3BF2B81A7587A6F50DDBDA4B /* Frameworks */ = {
@@ -202,7 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				195D485323CCC488004128DD /* LaunchScreen.storyboard in Resources */,
-				194F81A223D0CCFC004C4D9A /* Home.storyboard in Resources */,
+				1984C36E23D2D0AD00B90B61 /* Home.storyboard in Resources */,
 				195D486823D0970D004128DD /* GoogleService-Info.plist in Resources */,
 				195D485023CCC488004128DD /* Assets.xcassets in Resources */,
 				195D484E23CCC486004128DD /* Main.storyboard in Resources */,
@@ -259,12 +276,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				195D485F23CF7CB3004128DD /* UITextFieldExtension.swift in Sources */,
+				1984C36A23D2CBE900B90B61 /* UIHomeViewController.swift in Sources */,
+				1984C36623D2B8C000B90B61 /* Validator.swift in Sources */,
 				195D486423CF8622004128DD /* btnCustom.swift in Sources */,
 				195D485C23CF7BD0004128DD /* UIRegisterViewController.swift in Sources */,
 				195D486123CF8305004128DD /* UISignInViewController.swift in Sources */,
+				1984C36423D2B14A00B90B61 /* AlertDialog.swift in Sources */,
+				1984C36C23D2CDBB00B90B61 /* UIDashboardViewController.swift in Sources */,
 				195D486623CF8656004128DD /* CheckBoxButton.swift in Sources */,
 				195D484923CCC486004128DD /* AppDelegate.swift in Sources */,
-				194F81A423D0CE4F004C4D9A /* UIHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

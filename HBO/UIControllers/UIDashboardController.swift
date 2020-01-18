@@ -1,5 +1,5 @@
 //
-//  UIHomeViewController.swift
+//  UIDashboardController.swift
 //  HBO
 //
 //  Created by Malithi Sathsarani Mallawaarachchi on 1/18/20.
@@ -7,14 +7,12 @@
 //
 
 import Foundation
-import Foundation
 import UIKit
-import FirebaseAuth
-import FirebaseCore
 
-class UIHomeViewController: UIViewController {
+class UIDashboardController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
 }
