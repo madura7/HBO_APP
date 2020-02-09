@@ -7,14 +7,22 @@
 //
 
 import Foundation
-import Foundation
 import UIKit
 import FirebaseAuth
 import FirebaseCore
+import FirebaseDatabase
+import Firebase
+import LocalAuthentication
+import SwiftyJSON
 
 class UIHomeViewController: UIViewController {
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
     }
+
+    
 }

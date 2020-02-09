@@ -40,13 +40,12 @@ class UISignInViewController: UIViewController {
             else if user != nil {
                 print("Success")
                 
-                //let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "UIDashboardViewController") as! UIDashboardViewController
-                //let navController = UINavigationController(rootViewController: VC1)
-                //self.present(navController, animated:true, completion: nil)
+                let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "UIAddMoviesViewController") as! UIAddMoviesViewController
+                let navController = UINavigationController(rootViewController: VC1)
+                self.present(navController, animated:true, completion: nil)
 
-                
-                let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "UIHomeViewController")
-                self.present(vc, animated: true, completion: nil)
+                //let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "UIAddMoviesViewController")
+                //self.present(vc, animated: true, completion: nil)
                 
                 
             }

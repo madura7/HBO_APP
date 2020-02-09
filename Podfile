@@ -11,7 +11,12 @@ target 'HBO' do
 
   pod 'Firebase/Auth' 
   pod 'Firebase/Firestore' 
-
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Functions'
+  pod 'SwiftyJSON'
+  pod 'Firebase/Core'
+  pod 'Alamofire', '~> 5.0.0-rc.3'
 
   # Pods for HBO
 

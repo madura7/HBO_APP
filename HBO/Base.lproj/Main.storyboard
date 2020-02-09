@@ -163,6 +163,7 @@ and should contain special characters and numbers</string>
                                 <rect key="frame" x="26" y="231" width="363" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -170,7 +171,7 @@ and should contain special characters and numbers</string>
                                 <rect key="frame" x="26" y="288" width="363" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
@@ -203,30 +204,140 @@ and should contain special characters and numbers</string>
             </objects>
             <point key="canvasLocation" x="1897.1014492753625" y="131.91964285714286"/>
         </scene>
-        <!--Dashboard-->
-        <scene sceneID="NAw-KD-74X">
+        <!--Add Movies View Controller-->
+        <scene sceneID="rRI-fJ-7Uf">
             <objects>
-                <viewController storyboardIdentifier="UIDashboardViewController" id="i7q-Rd-hB9" userLabel="Dashboard" customClass="UIDashboardViewController" customModule="HBO" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qk5-gb-1gx">
+                <viewController restorationIdentifier="UIAddMoviesViewController" storyboardIdentifier="UIAddMoviesViewController" id="Hf2-AW-mjF" userLabel="Add Movies View Controller" customClass="UIAddMoviesViewController" customModule="HBO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o7h-eC-lvd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dashboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGT-4B-U4Q">
-                                <rect key="frame" x="109" y="334" width="196" height="75"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movie Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qcl-Sk-C2B">
+                                <rect key="frame" x="75" y="225" width="264" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Director" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2rB-hn-yrj">
+                                <rect key="frame" x="75" y="282" width="264" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rating" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dud-zU-ncL">
+                                <rect key="frame" x="75" y="339" width="264" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJ9-vJ-b7d">
+                                <rect key="frame" x="111" y="103" width="192" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd3-kl-VFg">
+                                <rect key="frame" x="75" y="457" width="264" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Add Movies"/>
+                                <connections>
+                                    <action selector="addMovieButtonPress:" destination="Hf2-AW-mjF" eventType="touchUpInside" id="brw-2a-PEk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPH-cc-dHX">
+                                <rect key="frame" x="20" y="103" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Movies"/>
+                                <connections>
+                                    <segue destination="dyr-uT-lXS" kind="show" id="qCx-MP-kkl"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sIl-es-bPi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="rdq-0G-Jn0"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldq-m7-qi5">
+                                <rect key="frame" x="346" y="103" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1xU-rA-V0c"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblAddMovies" destination="CJ9-vJ-b7d" id="1JV-ya-h3t"/>
+                        <outlet property="textDirector" destination="2rB-hn-yrj" id="10I-gY-5jg"/>
+                        <outlet property="textMovieName" destination="qcl-Sk-C2B" id="Ix7-NJ-WHl"/>
+                        <outlet property="textRating" destination="dud-zU-ncL" id="sqn-c2-tFH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TC4-sf-yxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369.56521739130437" y="979.6875"/>
+        </scene>
+        <!--Movie View Controller-->
+        <scene sceneID="Dhi-fT-nkC">
+            <objects>
+                <viewController id="dyr-uT-lXS" userLabel="Movie View Controller" customClass="UIMovieViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VQo-ev-d0q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MFS-DO-Wx3" userLabel="Table View Movies">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="113" id="hpE-8U-9Tk" userLabel="Movie Cell">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="113"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hpE-8U-9Tk" id="udp-Ad-Q1N">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="112.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXf-9j-hcM">
+                                                    <rect key="frame" x="20" y="46" width="45" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dyr-uT-lXS" id="Tn9-x2-T5C"/>
+                                    <outlet property="delegate" destination="dyr-uT-lXS" id="nYy-DL-5Yl"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <accessibility key="accessibilityConfiguration" identifier="UIDashboardViewController"/>
-                        <viewLayoutGuide key="safeArea" id="6UH-C5-BEa"/>
+                        <constraints>
+                            <constraint firstItem="MFS-DO-Wx3" firstAttribute="leading" secondItem="Ffo-Aw-eAB" secondAttribute="leading" id="JvN-yx-kPS"/>
+                            <constraint firstItem="MFS-DO-Wx3" firstAttribute="trailing" secondItem="Ffo-Aw-eAB" secondAttribute="trailing" id="LgK-zD-bue"/>
+                            <constraint firstItem="MFS-DO-Wx3" firstAttribute="leading" secondItem="Ffo-Aw-eAB" secondAttribute="leading" id="Yny-MI-E5C"/>
+                            <constraint firstItem="MFS-DO-Wx3" firstAttribute="bottom" secondItem="Ffo-Aw-eAB" secondAttribute="bottom" id="ZIv-t7-QFa"/>
+                            <constraint firstItem="MFS-DO-Wx3" firstAttribute="leading" secondItem="Ffo-Aw-eAB" secondAttribute="leading" id="ZQr-eK-3DS"/>
+                            <constraint firstItem="MFS-DO-Wx3" firstAttribute="top" secondItem="Ffo-Aw-eAB" secondAttribute="top" id="uhk-Vo-wZu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ffo-Aw-eAB"/>
                     </view>
+                    <connections>
+                        <outlet property="tableMovies" destination="MFS-DO-Wx3" id="eHg-WM-KL6"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6ku-J2-w4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5j2-P7-9JM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2943.4782608695655" y="140.625"/>
+            <point key="canvasLocation" x="1449.2753623188407" y="973.66071428571422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aoy-xI-7fK">
